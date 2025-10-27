@@ -1,0 +1,116 @@
+/* Reno */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background: #141414; 
+  color: #374151; 
+  user-select: none;
+  overflow-x: hidden;
+}
+
+
+
+.sidebar {
+  width: 250px;
+  background: #141414; 
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 6px rgba(99, 102, 241, 0.15); 
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.sidebar:hover {
+  background:  orange;
+}
+
+.logo h1 {
+  color: #ffffff; 
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  user-select: text;
+}
+
+.sidebar:hover .logo h1 {
+  color: #000000;
+} 
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #ffffff; 
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: block;
+  box-shadow: none;
+  user-select: none;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a:focus {
+  background: #000000; 
+  color: orange; 
+  outline: none;
+
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 30px 50px;
+  margin-left: 250px;
+  overflow-y: auto;
+  max-height: 100vh;
+  scroll-behavior: smooth;
+  background: #000000; 
+  box-shadow: none;
+}
+
+.main-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.main-content::-webkit-scrollbar-track {
+  background: #e0e7ff; 
+  border-radius: 8px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background: #4338ca; 
+  border-radius: 8px;
+}
+
+
+.dashboard-header {
+  margin-bottom: 40px;
+}
+
+.dashboard-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #ffffff; 
+  letter-spacing: 1px;
+  user-select: text;
+}
